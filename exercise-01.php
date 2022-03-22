@@ -1,8 +1,12 @@
 <?php
+error_reporting(0);
 
 class Config
 {
-    private $values = [];
+    private $values = [
+        'first'     => "apple",
+        'third'    => "banana"
+    ];
 
     public function getValues() {
         return $this->values;
@@ -11,6 +15,8 @@ class Config
 
 $config = new Config();
 
-$config->getValues()['test'] = 'test';
+$config->getValues()['second'] = 'mango';
 
-echo $config->getValues()['test'];
+echo $config->getValues()['first'] . PHP_EOL;
+echo $config->getValues()['second']. PHP_EOL;
+echo $config->values['third']. PHP_EOL;

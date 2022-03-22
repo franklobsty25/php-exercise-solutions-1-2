@@ -21,4 +21,4 @@ function get_orders()
     return json_encode($result,JSON_PRETTY_PRINT, 30);
 }
 
-echo get_order(32);
+echo get_orders(32);
