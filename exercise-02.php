@@ -4,7 +4,7 @@ require_once "db.php";
 function get_order($id)
 {
     global $db;
-    $orders_query = $db->prepare("SELECT * FROM orders WHERE id = ?");
+    $orders_query = $db->prepare("SELECT * FROM `order` WHERE id = ?");
     $orders_query->execute($id);
     $result = $orders_query->fetchAll();
 
@@ -14,7 +14,7 @@ function get_order($id)
 function get_orders()
 {
     global $db;
-    $orders_query = $db->prepare("SELECT * FROM orders");
+    $orders_query = $db->prepare("SELECT * FROM `order`");
     $orders_query->execute();
     $result = $orders_query->fetchAll();
 

@@ -1,12 +1,8 @@
 <?php
-$host = "127.0.0.1";
-$dbname = "interviews";
-$username = "interviews";
-$password = "interviews";
 
 try {
-    $db = new PDO("mysql:host=$host;dbname=$dbname;", $username, $password);
+    $db = new PDO("sqlite:northwind.sqlite", null, null);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch (PDOException $pe) {
-    die("Could not connect to the database $dbname :" . $pe->getMessage());
+    die("Could not connect to the database :" . $pe->getMessage());
 }
