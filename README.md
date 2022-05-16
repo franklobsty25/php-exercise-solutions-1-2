@@ -6,6 +6,7 @@ There is no one single `correct` approach. Feel free to consult any resources av
 
 We may ask you questions as you work through the exercises to understand your thought process. If you need to concentrate, you may request that we hold our questions until you are done with the exercise you are currently working on
 
+
 # Exercise 1
 
 The code in exercise-01.php makes use of a Config class. There are three echo statements in the file, each of which is meant to return a string. Identify what is wrong with the code and how it can be fixed
@@ -22,9 +23,5 @@ The code in exercise-02.php contains two functions
 
 # Exercise 3
 
-Create a laravel application that implements the functionality of the code in Exercise 2 above. Use the following database details:
+Create a laravel application that implements the functionality of the resulting code in Exercise 2 above.
 
->- Host: `localhost`
->- Database: `interview`
->- Username: `interview`
->- Password: `interview`
