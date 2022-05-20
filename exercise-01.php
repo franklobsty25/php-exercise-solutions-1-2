@@ -16,21 +16,23 @@ class Config
 
 $config = new Config();
 
-/**
- * The values array cannot be inserted using assignment operator
- */
 
 $config->getValues()['second'] = 'mango';
 
-echo $config->getValues()['first'] . PHP_EOL;
+/**
+ * Assigning the values to new array
+ */
+$arr = $config->getValues();
 
 /**
- * The "second" key does not exist in the values array. So can't be called
+ * Adding element to the array
  */
+$arr['second'] = 'mongo';
 
-echo $config->getValues()['second']. PHP_EOL;
+echo $config->getValues()['first'] . PHP_EOL;
 
+echo $arr['second'] . PHP_EOL;
 /**
  * The values variable is private accessor. So it cannot be access outside of the class.
  */
-echo $config->getValues()['third']. PHP_EOL;
+echo $config->getValues()['third'] . PHP_EOL;
