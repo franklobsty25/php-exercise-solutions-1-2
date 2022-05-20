@@ -16,9 +16,6 @@ class Config
 
 $config = new Config();
 
-
-$config->getValues()['second'] = 'mango';
-
 /**
  * Assigning the values to new array
  */
