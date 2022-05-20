@@ -3,8 +3,8 @@ error_reporting(0);
 
 class Config
 {
-    // Accessibilty of the variable has to be change to public
-    public $values = [
+    
+    private $values = [
         'first'     => "apple",
         'third'    => "banana"
     ];
@@ -32,6 +32,5 @@ echo $config->getValues()['second']. PHP_EOL;
 
 /**
  * The values variable is private accessor. So it cannot be access outside of the class.
- *  So to be able to access it. It must be public
  */
-echo $config->values['third']. PHP_EOL;
+echo $config->getValues()['third']. PHP_EOL;
